@@ -9,8 +9,8 @@ public class T01FacebookTitleCheck {
         //1. Open Chrome browser
 
         WebDriverManager.chromedriver().setup();
-        WebDriver driver=new ChromeDriver();
-        driver.manage().window().maximize();
+        WebDriver driver=new ChromeDriver();//polymorphism
+        driver.manage().window().maximize();//method chaining
         //2. Go to https://www.facebook.com
         driver.navigate().to("https://www.facebook.com");
         //String url=""https://www.facebook.com";
